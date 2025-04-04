@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--HEAD KISMI SEO ARAMASI-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>MERTCAN YILMAZ - MTY CODE</title>
+    <link rel="stylesheet" href="style.css" />
+   <link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css>
+  </head>
+  <!--SİTE GÖVDESİ-->
+  <body>
+  <div class="card" data-state="#about">
+  <div class="card-header">
+    <!--CARD ARKA İMG KISMI-->
+    <div class="card-cover" style="background-image: url('https://images.unsplash.com/photo-1639747280804-dd2d6b3d88ac?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')"></div>
+  <!--PROFİL FOTOGRAF ALANI-->
+    <img class="card-avatar" src="MERTCAN YILMAZ.png" />
+    <!--İSİM-->
+    <h1 class="card-fullname">MERTCAN YILMAZ</h1>
+    <!--YAPTIĞIM İŞ -->
+    <h2 class="card-jobtitle">MTY CODE | Yazılım Geliştirici</h2>
+  </div>
+  <div class="card-main">
+    <!-- Hakkımda -->
+    <div class="card-section is-active" id="about">
+        <div class="card-content">
+            <div class="card-subtitle"><ins>HAKKIMDA</ins></div>
+            <p class="card-desc">
+                <ins>MTY CODE</ins>, yazılım ve teknoloji alanında yenilikçi çözümler sunan bir yazılım şirketidir.
+                Web geliştirme, mobil uygulamalar, yapay zeka ve otomasyon sistemleri ile teknoloji dünyasında öncü olmayı hedeflemektedir. 🚀💻
+            </p>
+        </div>
+                     <!-- Sosyal Medya İkonları -->
+                     <div class="card-social">
+                      <a href="https://github.com/mty-code" target="_blank"><i class="fa-brands fa-github"></i></a>
+                      <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                      <a href="https://www.instagram.com/mty_code/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                      <a href="https://wa.me/905315804608" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                      <a href="tel:+905315804608"><i class="fa-solid fa-phone"></i></a>
+                      <a href="https://www.youtube.com/@MTYCODE" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                      <a href="https://x.com/MtyCode" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                  </div>
+          
+        </a>
+      </div>
+    </div>
+    <!--mty code İŞ DENEYİMİ-->
+    <div class="card-section" id="experience">
+      <div class="card-content">
+        <div class="card-subtitle">İŞ DENEYİMİ</div>
+        <div class="card-timeline">
+        <!--yıllar bölümü -->
+          <div class="card-item" data-year="MTY">
+            <div class="card-item-title">MTY CODE<span> Geleceğin Yazılımına Yön Veren İnovasyon Merkezi</span></div>
+            <div class="card-item-desc">Modern Teknoloji Yazılımları</div>
+          </div>
+          <div class="card-item" data-year="MTY">
+            <div class="card-item-title">MTY CODE<span> Misyonumuz</span></div>
+            <div class="card-item-desc">Müşterilerimizin iş süreçlerini optimize etmek, verimliliklerini artırmak ve rekabet avantajı elde etmelerine yardımcı olmak için çalışıyoruz.</div>
+          </div>
+          <div class="card-item" data-year="MTY">
+            <div class="card-item-title">MTY CODE <span>Vizyonumuz</span></div>
+            <div class="card-item-desc">Müşterilerimize sadece yazılım değil, aynı zamanda değer yaratan çözümler sunarak onların dijital dönüşüm süreçlerine liderlik etmeyi hedefliyoruz. </div>
+          </div>
+          <div class="card-item" data-year="MTY">
+            <div class="card-item-title">MTY CODE<span> Geleceği Kodluyoruz </span></div>
+            <div class="card-item-desc">"Modern Teknoloji Yazılımları"</div>
+          </div>
+        </div>
+      </div>
+    </div>
+       <!-- İletişim -->
+       <div class="card-section" id="contact">
+        <div class="card-content">
+            <div class="card-subtitle">İLETİŞİM</div>
+            <div class="card-contact-wrapper">
+                <div class="card-contact">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p><a href="https://goo.gl/maps/xyz123" target="_blank">Ankara, Türkiye</a></p>
+                </div>
+                <div class="card-contact">
+                    <i class="fa-solid fa-phone"></i>
+                    <a href="tel:+905315804608">(+90) 531 580 46 08</a>
+                </div>
+                <div class="card-contact">
+                    <i class="fa-solid fa-envelope"></i>
+                    <a href="mailto:mtycode0@gmail.com">mtycode0@gmail.com</a>
+                </div>      
+        </div>
+      </div>
+    </div>
+         <!-- Butonlar -->
+         <div class="card-buttons">
+          <button data-section="#about" class="is-active">HAKKIMDA</button>
+          <button data-section="#experience">DENEYİM</button>
+          <button data-section="#contact">İLETİŞİM</button>
+      </div>
+  </div>
+</div>
+
+
+<!--java-->
+    <script src="script.js"></script>
+  </body>
+</html>
+
+<script>
+  document.querySelectorAll(".card-buttons button").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const card = document.querySelector(".card");
+      const target = btn.getAttribute("data-section");
+
+      card.dataset.state = target;
+
+      document.querySelectorAll(".card-buttons button").forEach(b => b.classList.remove("is-active"));
+      btn.classList.add("is-active");
+
+      document.querySelectorAll(".card-section").forEach(sec => sec.classList.remove("is-active"));
+      document.querySelector(target).classList.add("is-active");
+    });
+  });
+</script>
